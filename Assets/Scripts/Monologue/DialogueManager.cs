@@ -45,6 +45,6 @@ public class DialogueManager : MonoBehaviour
     }
     void EndMonologue() 
     {
-
+        Time.timeScale = 1.0f;
     }
 }
