@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class TimeLineTrigger1 : MonoBehaviour
+public class TimeLineTrigger2 : MonoBehaviour
 {
-    [Header("TimeLine Events For Will Character")]
-    [SerializeField] private PlayableDirector TimeLineEventWill;
+    [Header("TimeLine Events For the Second Event")]
+    [SerializeField] private PlayableDirector TimeLineEvent2;
     // Start is called before the first frame update
     void Start()
     {
-        TimeLineEventWill.Stop();
+        TimeLineEvent2.Stop();
     }
 
     // Update is called once per frame
@@ -20,6 +20,6 @@ public class TimeLineTrigger1 : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        TimeLineEventWill.Play();
+        TimeLineEvent2.Play();
     }
 }
